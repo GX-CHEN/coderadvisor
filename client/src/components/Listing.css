@@ -1,0 +1,15 @@
+.listing-container {
+    padding: 3% calc(50vw - 500px);
+}
+
+.listing-header {
+    margin: 30px 0;
+}
+
+.listing-cards-container {
+    max-width: 1000px;
+}
+
+.card-container {
+    margin: 20px !important;
+}

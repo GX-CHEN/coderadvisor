@@ -5,16 +5,28 @@ import "./Listing.css";
 class Listing extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="listing-container">
         <h1 className="listing-header">Listing Page</h1>
-        <div className="listing-container">
+        <div className="listing-cards-container">
           <Row>
-            <Col xs={24} sm={12}><Card></Card></Col>
-            <Col xs={24} sm={12}><Card></Card></Col>
-            <Col xs={24} sm={12}><Card></Card></Col>
+            <Col xs={24} sm={12}>
+              <Card className="card-container" title="Fundamental">
+                <p>Test</p>
+              </Card>
+            </Col>
+            <Col xs={24} sm={12}>
+              <Card className="card-container" title="JavaScript">
+                <p>Test</p>
+              </Card>
+            </Col>
+            <Col xs={24} sm={12}>
+              <Card className="card-container" title="React">
+                <p>Test</p>
+              </Card>
+            </Col>
           </Row>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
