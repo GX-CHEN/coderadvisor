@@ -1,5 +1,12 @@
 @import '~antd/dist/antd.css';
 
 .App {
-  text-align: center;
+  padding: 12px 36px;
+}
+
+.lang-button {
+  position: fixed !important;
+  right: 12%;
+  bottom: 6%;
+  z-index: 100;
 }

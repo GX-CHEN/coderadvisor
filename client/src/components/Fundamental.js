@@ -4,7 +4,7 @@ class Fundamental extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div>Listing Page</div>
+        <div>Fundamental Page</div>
       </React.Fragment>
     );
   }
