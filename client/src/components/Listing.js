@@ -33,15 +33,11 @@ class Listing extends React.Component {
                 className="card-container"
                 title="JavaScript"
                 extra={
-                  <Button
-                    type="primary"
-                    shape="circle"
-                    onClick={() =>
-                      window.open("https://jsmastermind.com", "_blank")
-                    }
-                  >
-                    <RightOutlined />
-                  </Button>
+                  <a href="/javascript">
+                    <Button type="primary" shape="circle">
+                      <RightOutlined />
+                    </Button>
+                  </a>
                 }
               >
                 <p>Cover JS basics to advanced knowledge</p>

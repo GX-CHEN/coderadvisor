@@ -5,6 +5,7 @@ import { Button } from "antd";
 import Listing from "./components/Listing";
 import Fundamental from "./components/Fundamental";
 import Frontend from "./components/Frontend";
+import JsMastermind from './jsmastermind/index';
 import { changeLanguage } from "./data/langaugeUtil";
 import "./App.css";
 
@@ -25,6 +26,7 @@ class App extends React.Component {
             <Route exact path="/" component={Listing} />
             <Route exact path="/frontend" component={Frontend} />
             <Route exact path="/fundamental" component={Fundamental} />
+            <Route exact path="/javascript" component={JsMastermind} />
             <Route render={() => <div>No Match</div>} />
           </Switch>
         </BrowserRouter>
