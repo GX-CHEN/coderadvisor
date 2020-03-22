@@ -7,6 +7,7 @@ import {
   QuestionCircleOutlined,
   ArrowRightOutlined
 } from "@ant-design/icons";
+import QaContent from "./QaContent";
 import "./App.css";
 
 const { Header, Sider, Content } = Layout;
@@ -39,11 +40,21 @@ class App extends React.Component {
         <Header className="fundamental-header">
           <div className="header-logo">
             <QuestionCircleOutlined
-              style={{ fontSize: 32, paddingRight: 10,  verticalAlign: "middle" }}
+              style={{
+                fontSize: 32,
+                paddingRight: 10,
+                verticalAlign: "middle"
+              }}
             />
-            <ArrowRightOutlined style={{ fontSize: 22, verticalAlign: "middle" }} />
-            <ArrowRightOutlined style={{ fontSize: 22, verticalAlign: "middle" }} />
-            <SmileOutlined style={{ fontSize: 32, paddingLeft: 10, verticalAlign: "middle" }} />
+            <ArrowRightOutlined
+              style={{ fontSize: 22, verticalAlign: "middle" }}
+            />
+            <ArrowRightOutlined
+              style={{ fontSize: 22, verticalAlign: "middle" }}
+            />
+            <SmileOutlined
+              style={{ fontSize: 32, paddingLeft: 10, verticalAlign: "middle" }}
+            />
           </div>
           <div className="header-content">Fundamental Coding Knowledge</div>
         </Header>
@@ -58,6 +69,7 @@ class App extends React.Component {
               console.log(collapsed, type);
             }}
             width={256}
+            style={{height: "100vh"}}
           >
             <Menu
               mode="inline"
@@ -94,13 +106,8 @@ class App extends React.Component {
           <Layout style={{ padding: 30, maxWidth: 1280, margin: "0 auto" }}>
             <Content
               className="site-layout-content"
-              style={{
-                padding: 24,
-                margin: "64px 0 0",
-                minHeight: 280
-              }}
             >
-              Content
+              <QaContent />
             </Content>
           </Layout>
         </Layout>
