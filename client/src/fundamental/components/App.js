@@ -9,7 +9,7 @@ import {
 } from "@ant-design/icons";
 import "./App.css";
 
-const { Header, Sider } = Layout;
+const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
 
 class App extends React.Component {
@@ -43,9 +43,7 @@ class App extends React.Component {
             <ArrowRightOutlined style={{ fontSize: 22 }} />
             <SmileOutlined style={{ fontSize: 26 }} />
           </div>
-          <div className="header-content">
-            Fundamental Coding Knowledge
-          </div>
+          <div className="header-content">Fundamental Coding Knowledge</div>
         </Header>
         <Layout>
           <Sider
@@ -63,7 +61,7 @@ class App extends React.Component {
               mode="inline"
               openKeys={this.state.openKeys}
               onOpenChange={this.onOpenChange}
-              style={{ width: 256, height: "100vh" }}
+              style={{ width: 256, height: "100vh", paddingTop: 64 }}
             >
               <SubMenu
                 key="sub1"
@@ -97,6 +95,18 @@ class App extends React.Component {
               </SubMenu>
             </Menu>
           </Sider>
+          <Layout style={{ padding: 30, maxWidth: 1280, margin: "0 auto" }}>
+            <Content
+              className="site-layout-content"
+              style={{
+                padding: 24,
+                margin: "64px 0 0",
+                minHeight: 280
+              }}
+            >
+              Content
+            </Content>
+          </Layout>
         </Layout>
       </Layout>
     );
