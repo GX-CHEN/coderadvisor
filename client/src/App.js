@@ -2,6 +2,7 @@ import React from "react";
 import detectBrowserLanguage from "detect-browser-language";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Listing from "./listing/Listing";
+import Fundamental from "./fundamental/index";
 import JsMastermind from "./jsmastermind/index";
 import "./App.css";
 
@@ -20,6 +21,7 @@ class App extends React.Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Listing} />
+            <Route exact path="/fundamental" component={Fundamental} />
             <Route exact path="/javascript" component={JsMastermind} />
             <Route render={() => <div>No Match</div>} />
           </Switch>

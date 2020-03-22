@@ -1,0 +1,32 @@
+.menu-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fundamental-header {
+  background: #f0f5ff !important;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.header-logo {
+  float: left;
+  width: 256px;
+}
+
+.header-content {
+  float: left;
+  width: calc(100% - 256px);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-logo {
+    display: none;
+  }
+
+  .header-content {
+    width: 100%;
+  }
+}
