@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col, Card, Button } from "antd";
 import { RightOutlined } from "@ant-design/icons";
-import text from "../data/text";
 import "./Listing.css";
 
 class Listing extends React.Component {
