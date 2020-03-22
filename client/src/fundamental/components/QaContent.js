@@ -3,7 +3,7 @@ import { Collapse, Divider } from "antd";
 import { CaretRightOutlined } from "@ant-design/icons";
 import ReactMarkdown from "react-markdown";
 import javaBasics from "../data/javaBasics";
-import webDevData from "../data/webDevBasics";
+import webDevBasics from "../data/webDevBasics";
 import "./QaContent.css";
 
 const { Panel } = Collapse;
@@ -26,7 +26,7 @@ class QaContent extends React.Component {
               header={<b>{item.q}</b>}
               key={idx}
               className="site-collapse-custom-panel"
-              id={`web-dev-${idx}`}
+              id={`java-${idx}`}
             >
               <div className="panel-answer-content">
                 <ReactMarkdown source={item.a} />
@@ -43,7 +43,7 @@ class QaContent extends React.Component {
           )}
           className="site-collapse-custom-collapse"
         >
-          {webDevData.map((item, idx) => (
+          {webDevBasics.map((item, idx) => (
             <Panel
               header={<b>{item.q}</b>}
               key={idx}

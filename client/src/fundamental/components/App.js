@@ -7,6 +7,8 @@ import {
   QuestionCircleOutlined,
   ArrowRightOutlined
 } from "@ant-design/icons";
+import javaBasics from "../data/javaBasics";
+import webDevBasics from "../data/webDevBasics";
 import QaContent from "./QaContent";
 import "./App.css";
 
@@ -60,7 +62,7 @@ class App extends React.Component {
         </Header>
         <Layout>
           <Sider
-            breakpoint="md"
+            breakpoint="lg"
             collapsedWidth="0"
             onBreakpoint={broken => {
               console.log(broken);
@@ -68,14 +70,14 @@ class App extends React.Component {
             onCollapse={(collapsed, type) => {
               console.log(collapsed, type);
             }}
-            width={256}
+            width={360}
             style={{height: "100vh"}}
           >
             <Menu
               mode="inline"
               openKeys={this.state.openKeys}
               onOpenChange={this.onOpenChange}
-              style={{ width: 256, height: "100vh", paddingTop: 64 }}
+              style={{ width: 360, height: "100vh", paddingTop: 64, overflowY: "scroll", overflowX: "hidden" }}
             >
               <SubMenu
                 key="sub1"
@@ -86,8 +88,9 @@ class App extends React.Component {
                   </div>
                 }
               >
-                <Menu.Item key="1">Option 1</Menu.Item>
-                <Menu.Item key="2">Option 2</Menu.Item>
+                {javaBasics.map((item, idx) => (
+                  <Menu.Item key={`java-menu-${idx}`}><a href={`#java-${idx}`}>{item.q}</a></Menu.Item>
+                ) )}
               </SubMenu>
               <SubMenu
                 key="sub2"
@@ -98,8 +101,9 @@ class App extends React.Component {
                   </div>
                 }
               >
-                <Menu.Item key="5">Option 5</Menu.Item>
-                <Menu.Item key="6">Option 6</Menu.Item>
+                {webDevBasics.map((item, idx) => (
+                  <Menu.Item key={`java-menu-${idx}`}><a href={`#web-dev-${idx}`}>{item.q}</a></Menu.Item>
+                ) )}
               </SubMenu>
             </Menu>
           </Sider>

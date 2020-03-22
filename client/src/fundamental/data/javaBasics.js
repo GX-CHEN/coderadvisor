@@ -5,7 +5,7 @@ const javaBasics = [
       "A strongly typed language has stricter typing rules at compile time, which implies that errors and exceptions are more likely to happen during compilation."
   },
   {
-    q: "What is the advantage of strongly type? Disadvantage?",
+    q: "Advantage of strongly type? Disadvantage?",
     a:
       "1. Advantages:\n" +
       "    1. Earlier detection of errors in compiling, speeds development\n" +
@@ -15,7 +15,7 @@ const javaBasics = [
   },
   {
     q:
-      "What is difference between run-time error and compiling error. Example for each.",
+      "Difference between run-time and compiling error. Example for each.",
     a:
       "  A run time error will only occur when the code is actually running. These are the most difficult, can be hard to track down.\n" +
       "  \n" +
@@ -29,13 +29,13 @@ const javaBasics = [
       "     3. Referencing an object that has no properties"
   },
   {
-    q: "What is Data Abstract in Java, how can it be achieved?",
+    q: "Data Abstract in Java? how can it be achieved?",
     a:
       "  Data abstraction is the process of hiding certain details and showing only essential information to the user.\n" +
       "  In Java, Abstraction can be achieved with either abstract classes or interfaces"
   },
   {
-    q: "What is difference between interface and abstract class?",
+    q: "Difference between interface and abstract class?",
     a:
       "  1. Type of methods: Interface can have only abstract methods. Abstract class can have abstract and non-abstract methods. From Java 8, it can have default and static methods also.\n" +
       "  2. Final Variables: Variables declared in a Java interface are by default final. An abstract class may contain non-final variables.\n" +
@@ -46,7 +46,7 @@ const javaBasics = [
       "  7. Accessibility of Data Members: Members of a Java interface are public by default. A Java abstract class can have class members like private, protected, etc."
   },
   {
-    q: "Which is better? Interface or subclassing?",
+    q: "Interface or subclassing, Which is better?",
     a:
       "  (Arguably) Interface is generally considered to be better\n" +
       "  \n" +
@@ -119,7 +119,7 @@ const javaBasics = [
       "  ```"
   },
   {
-    q: "List all the collection types on top of head",
+    q: "List collection types in Java",
     a:
       "- List all the collection types you know\n" +
       "\n" +
@@ -151,7 +151,7 @@ const javaBasics = [
       "  3. If the class members declared as private then it may only be accessed by the class that defines the member.\n"
   },
   {
-    q: "What will happen if we do not provide constructor for Java class?",
+    q: "When not provide constructor for Java class, what may happen?",
     a:
       " Java does not actually require an explicit constructor in the class description. If you do not include a constructor, the Java compiler will create a default constructor in the byte code with an empty argument.\n"
   },
@@ -167,12 +167,12 @@ const javaBasics = [
       "  2. super() is used to call Base class’s constructor(i.e, Parent’s class) while this() is used to call current class’s constructor."
   },
   {
-    q: "How to clone an object and Java? Clone array, ArrayList, set etc.\n",
+    q: "Clone an object and Java? Clone array, ArrayList, set etc.\n",
     a:
       "You can manually create a new object and copy each field, but you can also use clone() method\n"
   },
   {
-    q: "What is the default value of the local variables?",
+    q: "Default value of the local variables?",
     a:
       "  1. The local variables are not initialized to any default values.\n" +
       "  2. We should not use local variables with out initialization."

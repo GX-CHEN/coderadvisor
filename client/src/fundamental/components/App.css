@@ -41,7 +41,6 @@
   background: white;
   padding: 24px;
   margin: 64px 0 0;
-
   height: calc(100vh - 126px);
 
   overflow-y: scroll !important;

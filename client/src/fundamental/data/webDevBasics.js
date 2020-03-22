@@ -1,6 +1,6 @@
-const webDevData = [
+const webDevBasics = [
   {
-    q: "What is server, what is client?",
+    q: "Server, what is client?",
     a:
       "  1. Client–server model is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called clients.\n" +
       "     Server is **the providers of a resource or service**\n" +
@@ -22,14 +22,14 @@ const webDevData = [
       '  4. JSON is "self-describing" and easy to understand'
   },
   {
-    q: "What is serialization/de-serialization?",
+    q: "Serialization/de-serialization?",
     a:
       "  1. Serialization is a mechanism of converting the state of an object into a byte stream.\n" +
       "  2. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory.\n" +
       "  3. This mechanism is used to persist the object."
   },
   {
-    q: "What is cookie and session?",
+    q: "Cookie and session?",
     a:
       "  1. A cookie is a bit of data stored by the browser and sent to the server with every request.\n" +
       "  2. A session is a collection of data stored on the server and associated with a given user (usually via a cookie containing an id code)"
@@ -41,4 +41,4 @@ const webDevData = [
   }
 ];
 
-export default webDevData;
+export default webDevBasics;
