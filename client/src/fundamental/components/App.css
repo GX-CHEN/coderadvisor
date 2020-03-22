@@ -4,8 +4,9 @@
 }
 
 .fundamental-header {
-  background: #f0f5ff !important;
+  background:#08979c !important;
   border-bottom: 1px solid #bfbfbf;
+  color: white;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -14,6 +15,7 @@
 .header-logo {
   float: left;
   width: 256px;
+  color: white !important;
 }
 
 .header-content {
@@ -22,6 +24,7 @@
   text-align: center;
   font-size: 22px;
   font-weight: 600;
+  color: white !important;
 }
 
 @media only screen and (max-width: 767px) {

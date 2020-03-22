@@ -14,7 +14,7 @@ const { SubMenu } = Menu;
 
 class App extends React.Component {
   // submenu keys of first level
-  rootSubmenuKeys = ["sub1", "sub2", "sub4"];
+  rootSubmenuKeys = ["sub1", "sub2"];
 
   state = {
     openKeys: ["sub1"]
@@ -38,10 +38,12 @@ class App extends React.Component {
       <Layout>
         <Header className="fundamental-header">
           <div className="header-logo">
-            <QuestionCircleOutlined style={{ fontSize: 26 }} />
-            <ArrowRightOutlined style={{ fontSize: 22 }} />
-            <ArrowRightOutlined style={{ fontSize: 22 }} />
-            <SmileOutlined style={{ fontSize: 26 }} />
+            <QuestionCircleOutlined
+              style={{ fontSize: 32, paddingRight: 10,  verticalAlign: "middle" }}
+            />
+            <ArrowRightOutlined style={{ fontSize: 22, verticalAlign: "middle" }} />
+            <ArrowRightOutlined style={{ fontSize: 22, verticalAlign: "middle" }} />
+            <SmileOutlined style={{ fontSize: 32, paddingLeft: 10, verticalAlign: "middle" }} />
           </div>
           <div className="header-content">Fundamental Coding Knowledge</div>
         </Header>
@@ -74,8 +76,6 @@ class App extends React.Component {
               >
                 <Menu.Item key="1">Option 1</Menu.Item>
                 <Menu.Item key="2">Option 2</Menu.Item>
-                <Menu.Item key="3">Option 3</Menu.Item>
-                <Menu.Item key="4">Option 4</Menu.Item>
               </SubMenu>
               <SubMenu
                 key="sub2"
@@ -88,10 +88,6 @@ class App extends React.Component {
               >
                 <Menu.Item key="5">Option 5</Menu.Item>
                 <Menu.Item key="6">Option 6</Menu.Item>
-                <SubMenu key="sub3" title="Submenu">
-                  <Menu.Item key="7">Option 7</Menu.Item>
-                  <Menu.Item key="8">Option 8</Menu.Item>
-                </SubMenu>
               </SubMenu>
             </Menu>
           </Sider>
