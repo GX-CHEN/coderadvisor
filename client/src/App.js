@@ -26,15 +26,6 @@ class App extends React.Component {
             <Route render={() => <div>No Match</div>} />
           </Switch>
         </BrowserRouter>
-        {/*<Button*/}
-        {/*  type="default"*/}
-        {/*  shape="circle"*/}
-        {/*  size="large"*/}
-        {/*  className="lang-button"*/}
-        {/*  onClick={changeLanguage}*/}
-        {/*>*/}
-        {/*  {localStorage.getItem("language") === "zh-CN" ? "EN" : "中"}*/}
-        {/*</Button>*/}
       </div>
     );
   }

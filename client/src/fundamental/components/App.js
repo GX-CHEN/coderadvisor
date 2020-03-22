@@ -40,7 +40,7 @@ class App extends React.Component {
     return (
       <Layout>
         <Header className="fundamental-header">
-          <div className="header-logo">
+          <div className="header-logo" onClick={() => window.location.replace("/")}>
             <QuestionCircleOutlined
               style={{
                 fontSize: 32,
@@ -71,13 +71,19 @@ class App extends React.Component {
               console.log(collapsed, type);
             }}
             width={360}
-            style={{height: "100vh"}}
+            style={{ height: "100vh" }}
           >
             <Menu
               mode="inline"
               openKeys={this.state.openKeys}
               onOpenChange={this.onOpenChange}
-              style={{ width: 360, height: "100vh", paddingTop: 64, overflowY: "scroll", overflowX: "hidden" }}
+              style={{
+                width: 360,
+                height: "100vh",
+                paddingTop: 64,
+                overflowY: "scroll",
+                overflowX: "hidden"
+              }}
             >
               <SubMenu
                 key="sub1"
@@ -89,8 +95,10 @@ class App extends React.Component {
                 }
               >
                 {javaBasics.map((item, idx) => (
-                  <Menu.Item key={`java-menu-${idx}`}><a href={`#java-${idx}`}>{item.q}</a></Menu.Item>
-                ) )}
+                  <Menu.Item key={`java-menu-${idx}`}>
+                    <a href={`#java-${idx}`}>{item.q}</a>
+                  </Menu.Item>
+                ))}
               </SubMenu>
               <SubMenu
                 key="sub2"
@@ -102,15 +110,15 @@ class App extends React.Component {
                 }
               >
                 {webDevBasics.map((item, idx) => (
-                  <Menu.Item key={`java-menu-${idx}`}><a href={`#web-dev-${idx}`}>{item.q}</a></Menu.Item>
-                ) )}
+                  <Menu.Item key={`java-menu-${idx}`}>
+                    <a href={`#web-dev-${idx}`}>{item.q}</a>
+                  </Menu.Item>
+                ))}
               </SubMenu>
             </Menu>
           </Sider>
           <Layout style={{ padding: 30, maxWidth: 1280, margin: "0 auto" }}>
-            <Content
-              className="site-layout-content"
-            >
+            <Content className="site-layout-content">
               <QaContent />
             </Content>
           </Layout>
