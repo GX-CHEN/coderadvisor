@@ -1,23 +1,34 @@
 import React from "react";
+import detectBrowserLanguage from "detect-browser-language";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Listing from "./components/Listing";
-import Fundamental from "./components/Fundamental";
-import Frontend from "./components/Frontend";
+import Listing from "./listing/Listing";
+import Fundamental from "./fundamental/index";
+import JsMastermind from "./jsmastermind/index";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Listing} />
-          <Route exact path="/frontend" component={Frontend} />
-          <Route exact path="/fundamental" component={Fundamental} />
-          <Route render={() => <div>No Match</div>} />
-        </Switch>
-      </BrowserRouter>
-    </div>
-  );
+class App extends React.Component {
+  componentDidMount() {
+    if (
+      !localStorage.getItem("language") ||
+      localStorage.getItem("language") === "null"
+    ) {
+      localStorage.setItem("language", detectBrowserLanguage());
+    }
+  }
+  render() {
+    return (
+      <div className="App">
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Listing} />
+            <Route exact path="/fundamental" component={Fundamental} />
+            <Route exact path="/javascript" component={JsMastermind} />
+            <Route render={() => <div>No Match</div>} />
+          </Switch>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
 export default App;

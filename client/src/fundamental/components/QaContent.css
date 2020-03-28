@@ -1,0 +1,15 @@
+.site-collapse-custom-collapse {
+    background: white !important;
+}
+
+.site-collapse-custom-collapse .site-collapse-custom-panel {
+    background: #f7f7f7;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.panel-answer-content {
+    background: white;
+    padding: 20px;
+}

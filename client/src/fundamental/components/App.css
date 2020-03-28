@@ -1,0 +1,47 @@
+.menu-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fundamental-header {
+  background: #08979c !important;
+  border-bottom: 1px solid #bfbfbf;
+  color: white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.header-logo {
+  float: left;
+  width: 256px;
+  color: white !important;
+}
+
+.header-content {
+  float: left;
+  width: calc(100% - 256px);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: white !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-logo {
+    display: none;
+  }
+
+  .header-content {
+    width: 100%;
+  }
+}
+
+.site-layout-content {
+  background: white;
+  padding: 24px;
+  margin: 64px 0 0;
+  height: calc(100vh - 126px);
+
+  overflow-y: scroll !important;
+}

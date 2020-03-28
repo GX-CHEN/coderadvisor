@@ -4,6 +4,7 @@
 
 .listing-header {
     margin: 30px 0;
+    text-align: center;
 }
 
 .listing-cards-container {
@@ -12,4 +13,9 @@
 
 .card-container {
     margin: 20px !important;
+    height: 240px;
+}
+
+.card-container p {
+    font-size: 16px;
 }
