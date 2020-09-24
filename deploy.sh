@@ -5,5 +5,5 @@ git pull
 cd '/root/coderadvisor/client' || exit
 npm install
 npm run build
-sudo cp -r build/ /var/www/html/
+sudo cp -r build/ /var/www/html/coderadvisor
 sudo service nginx reload
